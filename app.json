@@ -8,7 +8,7 @@
   "repository": "https://github.com/cdedreuille/legrandmartin",
   "buildpacks": [
     {
-      "url": "https://github.com/heroku/heroku-buildpack-nodejs"
+      "url": "ttps://github.com/heroku/heroku-buildpack-static.git"
     }
   ]
 }
