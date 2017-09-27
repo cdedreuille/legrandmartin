@@ -1,0 +1,93 @@
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+body {  
+    background-color: #bc9222;
+    transition: background-color .4s;
+  }
+
+#loader{
+  height: 5000px;
+}
+
+.bgimage{
+  display: none;
+}
+
+.slider {
+  height: auto;
+  margin: 0;
+  position: absolute;
+  left: 40px;
+  right: 40px;
+  top: 20px;
+  bottom: 20px;
+}
+
+div.info{
+  margin-top: 70px;
+  position: static;
+  height: auto;
+  margin-right: 20px;
+}
+
+div.me{
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 1px;
+  padding-bottom: 10px;
+}
+
+.one{;
+  font-size: 15px;
+  padding-bottom: 8px;
+}
+
+.one:after {
+  background: #fff;
+}
+
+.two{
+  font-size: 15px;
+  margin-left :0px;
+  margin-top: 40px;
+  padding-bottom: 8px;
+}
+
+.two:after {
+  background: #fff;
+}
+
+.three{
+  font-size: 15px;
+  margin-left :0px;
+  margin-top: 80px;
+  padding-bottom: 8px;
+}
+
+.three:after {
+  background: #fff;
+}
+
+.contrast{
+  position: fixed;
+  top: 30px;
+  right: 30px;
+}
+
+.icon-contrast{
+  color: #fff;
+}
+
+.icon-contrast:hover{
+  color: #000;
+}
+
+
+.get{
+  display: none;
+}
+
+a{
+  color: #fff;
+}

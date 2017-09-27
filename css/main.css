@@ -1,0 +1,1192 @@
+/*
+ * HTML5 Boilerplate
+ *
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+
+
+html {
+    height: 100%;
+    width: 100%;
+}
+
+button,
+input,
+select,
+textarea {
+    color: #fff;
+}
+
+body {
+    height: 100%;
+    width: 100%;    
+    background-color: #fff;
+    transition: background-color .4s;
+}
+
+
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+
+::-moz-selection {
+    background: #0066ff;
+    color: #fff;
+    text-shadow: none;}
+
+::selection {
+    background: #0066ff;
+    color: #fff;
+    text-shadow: none;}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
+ */
+
+img {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Chrome Frame prompt
+   ========================================================================== */
+
+.chromeframe {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+#loader{
+  background: #000;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+}
+
+.bgimage{
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+}
+
+.bgimage .inner{
+  text-align: center;
+}
+
+.image-wrap{
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+.image-wrap img{
+  max-width: 100%;
+}
+
+.wrap{
+  width: 100%;
+  height: 100%;
+  display: table;
+}
+
+.wrap > .inner{
+  width: 100%;
+  height: 100%;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.slider {
+  max-width: 800px;
+  height: 600px;
+  margin: auto;
+  position: relative;
+}
+
+.slide1,.slide2,.slide3,.slide4,.slide5,.slide6,.slide7,.slide8,.slide9,.slide10{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.slide1 {
+  background: url(http://i.imgur.com/FXlzkmI.png)no-repeat center;
+  background-size: contain;
+  animation:fade 5s infinite;
+  -webkit-animation:fade 5s infinite;
+  -webkit-animation-duration: 60s; /* Chrome, Safari, Opera */
+  animation-duration: 60s;
+} 
+
+.slide2 {
+  background: url(http://i.imgur.com/FXlzkmI.png)no-repeat center;
+  background-size: contain;
+  animation:fade2 5s infinite;
+  -webkit-animation:fade2 5s infinite;
+  -webkit-animation-duration: 60s; /* Chrome, Safari, Opera */
+  animation-duration: 60s;
+}
+
+.slide3 {
+  background: url(http://i.imgur.com/aXfvA96.png)no-repeat center;
+  background-size: contain;
+  animation:fade3 5s infinite;
+  -webkit-animation:fade3 5s infinite;
+  -webkit-animation-duration: 60s; /* Chrome, Safari, Opera */
+  animation-duration: 60s;
+}
+
+.slide4 {
+  background: url(http://i.imgur.com/GPXyQKQ.png)no-repeat center;
+  background-size: contain;
+  animation:fade4 5s infinite;
+  -webkit-animation:fade4 5s infinite;
+  -webkit-animation-duration: 60s; /* Chrome, Safari, Opera */
+  animation-duration: 60s;
+}
+
+.slide5 {
+  background: url(http://i.imgur.com/rhpgxFF.png)no-repeat center;
+  background-size: contain;
+  animation:fade5 5s infinite;
+  -webkit-animation:fade5 5s infinite;
+  -webkit-animation-duration: 60s; /* Chrome, Safari, Opera */
+  animation-duration: 60s;
+}
+
+.slide6 {
+  background: url(http://i.imgur.com/oQaNuGV.png)no-repeat center;
+  background-size: contain;
+  animation:fade6 5s infinite;
+  -webkit-animation:fade6 5s infinite;
+  -webkit-animation-duration: 60s; /* Chrome, Safari, Opera */
+    animation-duration: 60s;
+}
+.slide7 {
+  background: url(http://i.imgur.com/TsMu6oI.png)no-repeat center;
+  background-size: contain;
+  animation:fade7 5s infinite;
+  -webkit-animation:fade7 5s infinite;
+  -webkit-animation-duration: 60s; /* Chrome, Safari, Opera */
+  animation-duration: 60s;
+}
+
+.slide8 {
+  background: url(http://i.imgur.com/Mp5QWEB.png)no-repeat center;
+  background-size: contain;
+  animation:fade8 5s infinite;
+  -webkit-animation:fade8 5s infinite;
+  -webkit-animation-duration: 60s; /* Chrome, Safari, Opera */
+  animation-duration: 60s;
+}
+
+.slide9 {
+  background: url(http://i.imgur.com/BjtQ2G4.png)no-repeat center;
+  background-size: contain;
+  animation:fade9 5s infinite;
+  -webkit-animation:fade9 5s infinite;
+  -webkit-animation-duration: 60s; /* Chrome, Safari, Opera */
+  animation-duration: 60s;
+}
+
+.slide10 {
+  background: url(http://i.imgur.com/yo1AiNQ.png)no-repeat center;
+  background-size: contain;
+  animation:fade10 5s infinite;
+  -webkit-animation:fade10 5s infinite;
+  -webkit-animation-duration: 60s; /* Chrome, Safari, Opera */
+  animation-duration: 60s;
+}
+
+@-webkit-keyframes fade {
+  0%   {opacity:1}
+  10% { opacity: 0}
+  20% { opacity: 0}
+  30% { opacity: 0}
+  40% { opacity: 0}
+  50% { opacity: 0}
+  60% { opacity: 0}
+  70% { opacity: 0}
+  80% { opacity: 0}
+  90% { opacity: 0}
+  100% { opacity: 1}
+}
+@-moz-keyframes fade {
+  0%   {opacity:1}
+  10% { opacity: 0}
+  20% { opacity: 0}
+  30% { opacity: 0}
+  40% { opacity: 0}
+  50% { opacity: 0}
+  60% { opacity: 0}
+  70% { opacity: 0}
+  80% { opacity: 0}
+  90% { opacity: 0}
+  100% { opacity: 1}
+}
+@-o-keyframes fade {
+  0%   {opacity:1}
+  10% { opacity: 0}
+  20% { opacity: 0}
+  30% { opacity: 0}
+  40% { opacity: 0}
+  50% { opacity: 0}
+  60% { opacity: 0}
+  70% { opacity: 0}
+  80% { opacity: 0}
+  90% { opacity: 0}
+  100% { opacity: 1}
+}
+@keyframes fade {
+  0%   {opacity:1}
+  10% { opacity: 0}
+  20% { opacity: 0}
+  30% { opacity: 0}
+  40% { opacity: 0}
+  50% { opacity: 0}
+  60% { opacity: 0}
+  70% { opacity: 0}
+  80% { opacity: 0}
+  90% { opacity: 0}
+  100% { opacity: 1}
+}
+
+
+@-webkit-keyframes fade2 {
+  0%   {opacity:0}
+  10% { opacity: 1}
+  20% { opacity: 0}
+  30% { opacity: 0}
+  40% { opacity: 0}
+  50% { opacity: 0}
+  60% { opacity: 0}
+  70% { opacity: 0}
+  80% { opacity: 0}
+  90% { opacity: 0}
+  100% { opacity: 0}
+}
+@-moz-keyframes fade2 {
+  0%   {opacity:0}
+  10% { opacity: 1}
+  20% { opacity: 0}
+  30% { opacity: 0}
+  40% { opacity: 0}
+  50% { opacity: 0}
+  60% { opacity: 0}
+  70% { opacity: 0}
+  80% { opacity: 0}
+  90% { opacity: 0}
+  100% { opacity: 0}
+}
+@-o-keyframes fade2 {
+  0%   {opacity:0}
+  10% { opacity: 1}
+  20% { opacity: 0}
+  30% { opacity: 0}
+  40% { opacity: 0}
+  50% { opacity: 0}
+  60% { opacity: 0}
+  70% { opacity: 0}
+  80% { opacity: 0}
+  90% { opacity: 0}
+  100% { opacity: 0}
+}
+@keyframes fade2 {
+  0%   {opacity:0}
+  10% { opacity: 1}
+  20% { opacity: 0}
+  30% { opacity: 0}
+  40% { opacity: 0}
+  50% { opacity: 0}
+  60% { opacity: 0}
+  70% { opacity: 0}
+  80% { opacity: 0}
+  90% { opacity: 0}
+  100% { opacity: 0}
+}
+
+
+@-webkit-keyframes fade3 {
+  0%   {opacity:0}
+  10% { opacity: 0}
+  20% { opacity: 1}
+  30% { opacity: 0}
+  40% { opacity: 0}
+  50% { opacity: 0}
+  60% { opacity: 0}
+  70% { opacity: 0}
+  80% { opacity: 0}
+  90% { opacity: 0}
+  100% { opacity: 0}
+}
+@-moz-keyframes fade3 {
+  0%   {opacity:0}
+  10% { opacity: 0}
+  20% { opacity: 1}
+  30% { opacity: 0}
+  40% { opacity: 0}
+  50% { opacity: 0}
+  60% { opacity: 0}
+  70% { opacity: 0}
+  80% { opacity: 0}
+  90% { opacity: 0}
+  100% { opacity: 0}
+}
+@-o-keyframes fade3 {
+  0%   {opacity:0}
+  10% { opacity: 0}
+  20% { opacity: 1}
+  30% { opacity: 0}
+  40% { opacity: 0}
+  50% { opacity: 0}
+  60% { opacity: 0}
+  70% { opacity: 0}
+  80% { opacity: 0}
+  90% { opacity: 0}
+  100% { opacity: 0}
+}
+@keyframes fade3 {
+  0%   {opacity:0}
+  10% { opacity: 0}
+  20% { opacity: 1}
+  30% { opacity: 0}
+  40% { opacity: 0}
+  50% { opacity: 0}
+  60% { opacity: 0}
+  70% { opacity: 0}
+  80% { opacity: 0}
+  90% { opacity: 0}
+  100% { opacity: 0}
+}
+
+
+@-webkit-keyframes fade4 {
+  0%   {opacity:0}
+  10% { opacity: 0}
+  20% { opacity: 0}
+  30% { opacity: 1}
+  40% { opacity: 0}
+  50% { opacity: 0}
+  60% { opacity: 0}
+  70% { opacity: 0}
+  80% { opacity: 0}
+  90% { opacity: 0}
+  100% { opacity: 0}
+}
+@-moz-keyframes fade4 {
+  0%   {opacity:0}
+  10% { opacity: 0}
+  20% { opacity: 0}
+  30% { opacity: 1}
+  40% { opacity: 0}
+  50% { opacity: 0}
+  60% { opacity: 0}
+  70% { opacity: 0}
+  80% { opacity: 0}
+  90% { opacity: 0}
+  100% { opacity: 0}
+}
+@-o-keyframes fade4 {
+  0%   {opacity:0}
+  10% { opacity: 0}
+  20% { opacity: 0}
+  30% { opacity: 1}
+  40% { opacity: 0}
+  50% { opacity: 0}
+  60% { opacity: 0}
+  70% { opacity: 0}
+  80% { opacity: 0}
+  90% { opacity: 0}
+  100% { opacity: 0}
+}
+@keyframes fade4 {
+  0%   {opacity:0}
+  10% { opacity: 0}
+  20% { opacity: 0}
+  30% { opacity: 1}
+  40% { opacity: 0}
+  50% { opacity: 0}
+  60% { opacity: 0}
+  70% { opacity: 0}
+  80% { opacity: 0}
+  90% { opacity: 0}
+  100% { opacity: 0}
+}
+
+
+@-webkit-keyframes fade5 {
+  0%   {opacity:0}
+  10% { opacity: 0}
+  20% { opacity: 0}
+  30% { opacity: 0}
+  40% { opacity: 1}
+  50% { opacity: 0}
+  60% { opacity: 0}
+  70% { opacity: 0}
+  80% { opacity: 0}
+  90% { opacity: 0}
+  100% { opacity: 0}
+}
+@-moz-keyframes fade5 {
+  0%   {opacity:0}
+  10% { opacity: 0}
+  20% { opacity: 0}
+  30% { opacity: 0}
+  40% { opacity: 1}
+  50% { opacity: 0}
+  60% { opacity: 0}
+  70% { opacity: 0}
+  80% { opacity: 0}
+  90% { opacity: 0}
+  100% { opacity: 0}
+}
+@-o-keyframes fade5 {
+  0%   {opacity:0}
+  10% { opacity: 0}
+  20% { opacity: 0}
+  30% { opacity: 0}
+  40% { opacity: 1}
+  50% { opacity: 0}
+  60% { opacity: 0}
+  70% { opacity: 0}
+  80% { opacity: 0}
+  90% { opacity: 0}
+  100% { opacity: 0}
+}
+@keyframes fade5 {
+  0%   {opacity:0}
+  10% { opacity: 0}
+  20% { opacity: 0}
+  30% { opacity: 0}
+  40% { opacity: 1}
+  50% { opacity: 0}
+  60% { opacity: 0}
+  70% { opacity: 0}
+  80% { opacity: 0}
+  90% { opacity: 0}
+  100% { opacity: 0}
+}
+
+
+@-webkit-keyframes fade6 {
+  0%   {opacity:0}
+  10% { opacity: 0}
+  20% { opacity: 0}
+  30% { opacity: 0}
+  40% { opacity: 0}
+  50% { opacity: 1}
+  60% { opacity: 0}
+  70% { opacity: 0}
+  80% { opacity: 0}
+  90% { opacity: 0}
+  100% { opacity: 0}
+}
+@-moz-keyframes fade6 {
+  0%   {opacity:0}
+  10% { opacity: 0}
+  20% { opacity: 0}
+  30% { opacity: 0}
+  40% { opacity: 0}
+  50% { opacity: 1}
+  60% { opacity: 0}
+  70% { opacity: 0}
+  80% { opacity: 0}
+  90% { opacity: 0}
+  100% { opacity: 0}
+}
+@-o-keyframes fade6 {
+  0%   {opacity:0}
+  10% { opacity: 0}
+  20% { opacity: 0}
+  30% { opacity: 0}
+  40% { opacity: 0}
+  50% { opacity: 1}
+  60% { opacity: 0}
+  70% { opacity: 0}
+  80% { opacity: 0}
+  90% { opacity: 0}
+  100% { opacity: 0}
+}
+@keyframes fade6 {
+  0%   {opacity:0}
+  10% { opacity: 0}
+  20% { opacity: 0}
+  30% { opacity: 0}
+  40% { opacity: 0}
+  50% { opacity: 1}
+  60% { opacity: 0}
+  70% { opacity: 0}
+  80% { opacity: 0}
+  90% { opacity: 0}
+  100% { opacity: 0}
+}
+
+
+@-webkit-keyframes fade7 {
+  0%   {opacity:0}
+  10% { opacity: 0}
+  20% { opacity: 0}
+  30% { opacity: 0}
+  40% { opacity: 0}
+  50% { opacity: 0}
+  60% { opacity: 1}
+  70% { opacity: 0}
+  80% { opacity: 0}
+  90% { opacity: 0}
+  100% { opacity: 0}
+}
+@-moz-keyframes fade7 {
+  0%   {opacity:0}
+  10% { opacity: 0}
+  20% { opacity: 0}
+  30% { opacity: 0}
+  40% { opacity: 0}
+  50% { opacity: 0}
+  60% { opacity: 1}
+  70% { opacity: 0}
+  80% { opacity: 0}
+  90% { opacity: 0}
+  100% { opacity: 0}
+}
+@-o-keyframes fade7 {
+  0%   {opacity:0}
+  10% { opacity: 0}
+  20% { opacity: 0}
+  30% { opacity: 0}
+  40% { opacity: 0}
+  50% { opacity: 0}
+  60% { opacity: 1}
+  70% { opacity: 0}
+  80% { opacity: 0}
+  90% { opacity: 0}
+  100% { opacity: 0}
+}
+@keyframes fade7 {
+  0%   {opacity:0}
+  10% { opacity: 0}
+  20% { opacity: 0}
+  30% { opacity: 0}
+  40% { opacity: 0}
+  50% { opacity: 0}
+  60% { opacity: 1}
+  70% { opacity: 0}
+  80% { opacity: 0}
+  90% { opacity: 0}
+  100% { opacity: 0}
+}
+
+
+@-webkit-keyframes fade8 {
+  0%   {opacity:0}
+  10% { opacity: 0}
+  20% { opacity: 0}
+  30% { opacity: 0}
+  40% { opacity: 0}
+  50% { opacity: 0}
+  60% { opacity: 0}
+  70% { opacity: 1}
+  80% { opacity: 0}
+  90% { opacity: 0}
+  100% { opacity: 0}
+}
+@-moz-keyframes fade8 {
+  0%   {opacity:0}
+  10% { opacity: 0}
+  20% { opacity: 0}
+  30% { opacity: 0}
+  40% { opacity: 0}
+  50% { opacity: 0}
+  60% { opacity: 0}
+  70% { opacity: 1}
+  80% { opacity: 0}
+  90% { opacity: 0}
+  100% { opacity: 0}
+}
+@-o-keyframes fade8 {
+  0%   {opacity:0}
+  10% { opacity: 0}
+  20% { opacity: 0}
+  30% { opacity: 0}
+  40% { opacity: 0}
+  50% { opacity: 0}
+  60% { opacity: 0}
+  70% { opacity: 1}
+  80% { opacity: 0}
+  90% { opacity: 0}
+  100% { opacity: 0}
+}
+@keyframes fade8 {
+  0%   {opacity:0}
+  10% { opacity: 0}
+  20% { opacity: 0}
+  30% { opacity: 0}
+  40% { opacity: 0}
+  50% { opacity: 0}
+  60% { opacity: 0}
+  70% { opacity: 1}
+  80% { opacity: 0}
+  90% { opacity: 0}
+  100% { opacity: 0}
+}
+
+
+@-webkit-keyframes fade9 {
+  0%   {opacity:0}
+  10% { opacity: 0}
+  20% { opacity: 0}
+  30% { opacity: 0}
+  40% { opacity: 0}
+  50% { opacity: 0}
+  60% { opacity: 0}
+  70% { opacity: 0}
+  80% { opacity: 1}
+  90% { opacity: 0}
+  100% { opacity: 0}
+}
+@-moz-keyframes fade9 {
+  0%   {opacity:0}
+  10% { opacity: 0}
+  20% { opacity: 0}
+  30% { opacity: 0}
+  40% { opacity: 0}
+  50% { opacity: 0}
+  60% { opacity: 0}
+  70% { opacity: 0}
+  80% { opacity: 1}
+  90% { opacity: 0}
+  100% { opacity: 0}
+}
+@-o-keyframes fade9 {
+  0%   {opacity:0}
+  10% { opacity: 0}
+  20% { opacity: 0}
+  30% { opacity: 0}
+  40% { opacity: 0}
+  50% { opacity: 0}
+  60% { opacity: 0}
+  70% { opacity: 0}
+  80% { opacity: 1}
+  90% { opacity: 0}
+  100% { opacity: 0}
+}
+@keyframes fade9 {
+  0%   {opacity:0}
+  10% { opacity: 0}
+  20% { opacity: 0}
+  30% { opacity: 0}
+  40% { opacity: 0}
+  50% { opacity: 0}
+  60% { opacity: 0}
+  70% { opacity: 0}
+  80% { opacity: 1}
+  90% { opacity: 0}
+  100% { opacity: 0}
+}
+
+
+@-webkit-keyframes fade10 {
+  0%   {opacity:0}
+  10% { opacity: 0}
+  20% { opacity: 0}
+  30% { opacity: 0}
+  40% { opacity: 0}
+  50% { opacity: 0}
+  60% { opacity: 0}
+  70% { opacity: 0}
+  80% { opacity: 0}
+  90% { opacity: 1}
+  100% { opacity: 0}
+}
+@-moz-keyframes fade10 {
+  0%   {opacity:0}
+  10% { opacity: 0}
+  20% { opacity: 0}
+  30% { opacity: 0}
+  40% { opacity: 0}
+  50% { opacity: 0}
+  60% { opacity: 0}
+  70% { opacity: 0}
+  80% { opacity: 0}
+  90% { opacity: 1}
+  100% { opacity: 0}
+}
+@-o-keyframes fade10 {
+  0%   {opacity:0}
+  10% { opacity: 0}
+  20% { opacity: 0}
+  30% { opacity: 0}
+  40% { opacity: 0}
+  50% { opacity: 0}
+  60% { opacity: 0}
+  70% { opacity: 0}
+  80% { opacity: 0}
+  90% { opacity: 1}
+  100% { opacity: 0}
+}
+@keyframes fade10 {
+  0%   {opacity:0}
+  10% { opacity: 0}
+  20% { opacity: 0}
+  30% { opacity: 0}
+  40% { opacity: 0}
+  50% { opacity: 0}
+  60% { opacity: 0}
+  70% { opacity: 0}
+  80% { opacity: 0}
+  90% { opacity: 1}
+  100% { opacity: 0}
+}
+
+div.info{
+  max-width: 460px;
+  margin-left: 10%;
+  padding-top: 50px;
+  padding-bottom: 200px;
+  padding-right: 20%;
+}
+
+div.me{
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  color: #222;
+  font-size: 24px;
+  line-height: 40px;
+  letter-spacing: 0.05em;
+  margin-bottom: 40px;
+  margin-left: 0px;
+}
+
+.one{
+  position:absolute;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  color: #222;
+  font-size: 17px;
+  letter-spacing: 0.06em;
+  padding-bottom: 15px;
+
+}
+
+.one:before {
+  color: #222;
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 1px;
+  width: 0;
+  transition: width 0s ease, background .5s ease;
+}
+
+.one:after {
+  color: #222;
+  content: '';
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 1px;
+  width: 0;
+  background: #b6b6b6;
+  transition: width .5s ease;
+}
+
+.one:hover:before {
+  color: #222;
+  width: 100%;
+  background: #222;
+  transition: width .5s ease;
+}
+
+.one:hover:after {
+  color: #222;
+  width: 100%;
+  background: transparent;
+  transition: all 0s ease;
+}
+
+.two{
+  position:absolute;
+  margin-left: 153px;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  color: #222;
+  font-size: 17px;
+  letter-spacing: 0.06em;
+  padding-bottom: 15px;
+
+}
+
+
+.two:before {
+  color: #222;
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 1px;
+  width: 0;
+  transition: width 0s ease, background .5s ease;
+}
+
+.two:after {
+  color: #222;
+  content: '';
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 1px;
+  width: 0;
+  background: #b6b6b6;
+  transition: width .5s ease;
+}
+
+.two:hover:before {
+  color: #222;
+  width: 100%;
+  background: #222;
+  transition: width .5s ease;
+}
+
+.two:hover:after {
+  color: #222;
+  width: 100%;
+  background: transparent;
+  transition: all 0s ease;
+}
+
+.three{
+  position:absolute;
+  margin-left: 245px;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  color: #222;
+  font-size: 17px;
+  letter-spacing: 0.06em;
+  padding-bottom: 15px;
+  
+}
+
+.three:before {
+  color: #222;
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 1px;
+  width: 0;
+  transition: width 0s ease, background .5s ease;
+}
+
+.three:after {
+  color: #222;
+  content: '';
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 1px;
+  width: 0;
+  background: #b6b6b6;
+  transition: width .5s ease;
+}
+
+.three:hover:before {
+  color: #222;
+  width: 100%;
+  background: #222;
+  transition: width .5s ease;
+}
+
+.three:hover:after {
+  color: #222;
+  width: 100%;
+  background: transparent;
+  transition: all 0s ease;
+}
+
+
+.contrast{
+  position: absolute;
+  top: 65px;
+  right: 75px;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transform: rotate(0deg);
+  }
+
+.icon-contrast{
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #b6b6b6;
+  font-size: 14px;
+  text-decoration: none;
+  outline:0;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  }
+
+.icon-contrast:hover{
+  padding-top: 28px;
+  color: red;
+  text-decoration: none;
+  outline: none;
+  -moz-transition-duration: 0.6s;
+  -o-transition-duration: 0.6s;
+  -webkit-transition-duration: 0.6s;
+  transition-duration: 0.6s;
+}
+
+.arrow{
+  font-family: "Times New Roman", Georgia, Serif;
+  display:inline-block;
+  margin-right: 20px;
+  color: #222;
+}
+
+.get{
+  position: absolute;
+  bottom: 140px;
+  right: 0%;
+  color: #222;
+  letter-spacing: 0.06em;
+  -webkit-transform: rotate(-90deg);
+  }
+
+.get-in-touch-link{
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 17px;
+  display: inline-block;
+  border: none;
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.get-in-touch-link:hover{
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 17px;
+  border: none;
+  color: #222;
+  -moz-transform: translate3d(8px, 0, 0);
+  -ms-transform: translate3d(8px, 0, 0);
+  -webkit-transform: translate3d(8px, 0, 0);
+  transform: translate3d(8px, 0, 0);
+}
+
+
+p{
+}
+
+a{
+  text-decoration: none;
+  color: #b6b6b6;
+  outline:0; 
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  padding-bottom: 15px;
+}
+
+a:hover{
+  color: #222;
+  padding-bottom: 15px;
+  text-decoration: none;
+  outline: none;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+
+a:active, a:focus{
+    outline:none;
+}
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Image replacement
+ */
+
+.ir {
+  background-color: transparent;
+  border: 0;
+  overflow: hidden;
+  /* IE 6/7 fallback */
+  *text-indent: -9999px;
+}
+
+.ir:before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 150%;
+}
+
+
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+  display: none !important;
+  visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+  visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+  content: " "; /* 1 */
+  display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+  *zoom: 1;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media (max-width: 830px) {
+    .pic {height: 300px;}
+}
+
+@media (max-width: 500px) {
+    .pic {height: 200px;}
+}
+
+
+
+
+

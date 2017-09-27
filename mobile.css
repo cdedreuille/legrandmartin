@@ -1,0 +1,63 @@
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+#loader{
+  height: 5000px;
+}
+
+.bgimage{
+  display: none;
+}
+
+.slider {
+  height: auto;
+  margin: 0;
+  position: absolute;
+  left: 40px;
+  right: 40px;
+  top: 20px;
+  bottom: 20px;
+}
+
+div.info{
+  margin-top: 70px;
+  position: static;
+  height: auto;
+  margin-right: 25px;
+}
+
+div.me{
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing: 1px;
+}
+
+.one{;
+  font-size: 10px;
+  padding-bottom: 8px;
+}
+
+.two{
+  font-size: 10px;
+  margin-left :0px;
+  margin-top: 40px;
+  padding-bottom: 8px;
+}
+
+.three{
+  font-size: 10px;
+  margin-left :0px;
+  margin-top: 80px;
+  padding-bottom: 8px;
+}
+
+.contrast{
+  position: fixed;
+  top: 30px;
+  right: 30px;
+}
+
+.get{
+  display: none;
+}
