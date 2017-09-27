@@ -1,0 +1,14 @@
+{
+  "name": "Martin Legrand",
+  "description": "Martin Legrand",
+  "keywords": [
+    "portfolio"
+  ],
+  "website": "http://legrandmartin.com",
+  "repository": "https://github.com/cdedreuille/legrandmartin",
+  "buildpacks": [
+    {
+      "url": "https://github.com/heroku/heroku-buildpack-nodejs"
+    }
+  ]
+}
