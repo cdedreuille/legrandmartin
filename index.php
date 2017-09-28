@@ -1,6 +1,1 @@
-<?php
-
-include_once(“home.html”);
-<!-- coucou -->
-
-?>
+<?php include_once("home.html"); ?>
